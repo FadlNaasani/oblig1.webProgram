@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Oblig1.java.js"></script>
+
+</head>
+<body>
+<h1>Bestilling av kinobiletter </h1>
+<table>
+    <tr>
+        <th>Velg film her: </th> <td>
+        <select name="filmliste">
+            <option >film1 </option>
+            <option>film2</option>
+            <option>film3</option>
+            <option>film3</option>
+        </select></td>
+    </tr>
+    <table/> <br><br>
+
+
+        <tr>
+            <th> <label> Antall:</label> </th>
+            <td> <input type="number" id="antall"></td>
+            <td><span id="feilAntall"></span><br/></td>
+        </tr>
+        <tr>
+            <th> <label> Fornavn:</label> </th>
+            <td> <input type="text" id="forNavn"></td>
+            <td><span id="feilfor"></span><br/></td>
+        </tr>
+        <tr>
+            <th><label>Etternavn: </label></th>
+            <td> <input type="text"  id="etterNavn"></td>
+            <td><span id="feilEtter"></span><br/></td>
+        </tr>
+        <tr>
+            <th><label>TelefonNr:</label></th>
+            <td> <input type="text" id="telefon"></td>
+            <td><span id="feilTelf"></span><br/></td>
+        </tr>
+        <tr>
+            <th><label>Epost:</label></th>
+            <td> <input type="text" id="epost"></td>
+            <td><span id="feilEpost"></span><br/></td>
+        </tr>
+    </table>
+
+
+    <button onclick="kjop()">Kjøp bilett</button> <br><br>
+    <span id="visBilett"> </span><br/>
+    <button onclick="deletes()">Slett alle billetter</button>
+    <span id="slettbilett"></span><br/>
+
+
+</body>
+</html>
+
+
+
